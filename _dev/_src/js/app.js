@@ -4,13 +4,13 @@
 
 		// ロールオーバー
 		var RollOver = function(){
-			$('img.over, input.over').each(function(){
+			$('img.js-rollover, input.js-rollover').each(function(){
 				this.originalSrc = $(this).attr('src');
 				this.rolloverSrc = this.originalSrc.replace(/(\.gif|\.jpg|\.png)/, "_on$1");
 			});
-			$('img.over, input.over').hover(function(){$(this).attr('src',this.rolloverSrc);},function(){$(this).attr('src',this.originalSrc);});
+			$('img.js-rollover, input.js-rollover').hover(function(){$(this).attr('src',this.rolloverSrc);},function(){$(this).attr('src',this.originalSrc);});
 			window.onunload=function(){
-				$('img.over, input.over').attr('src',this.originalSrc);
+				$('img.js-rollover, input.js-rollover').attr('src',this.originalSrc);
 			}
 		}
 
