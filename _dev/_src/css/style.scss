@@ -2,6 +2,7 @@
 
 
 $base-color: #C9000A;
+$hover-color: #F9E920;
 $bg-color: #F9E920;
 
 @import "reset";
@@ -133,16 +134,6 @@ img{
 	}
 }
 
-.sns_link ul{
-	padding: 5px 0 5px 10px;
-	float: right;
-}
-
-.sns_link li{
-	float: left;
-	padding: 0 5px;
-}
-
 
 @media screen and ( max-width:1000px) {
 	/*.pc_navigation{
@@ -162,3 +153,68 @@ img{
 	footer
 --------------*/
 
+.c_ftr_content{
+	padding: 90px 0 0;
+	color: #fff;
+
+	.ftr_wrapper{
+		background: $base-color;
+		position: relative;
+
+		.pagetop{
+			display: block;
+			width: 75px;
+			position: absolute;
+			top: -183px;
+			right: 0px;
+		}
+
+		.ftr_inner{
+			padding: 28px 0;
+			width: 1040px;
+			margin: 0 auto;
+			overflow: hidden;
+			zoom: 1;
+
+			
+			.ftr_navigation{
+				padding: 10px 0;
+				float: left;
+
+				li{
+					float: left;
+					border-right: 1px solid #fff;
+					padding: 0 15px;
+
+					&:last-child{
+						border: none;
+					}
+
+					a{
+						color: #fff;
+
+						&:hover{
+							color: $hover-color;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			.sns_link{
+				float: right;
+				padding: 5px 0;
+
+				li{
+					float: left;
+					width: 34px;
+					padding: 0 5px;
+					box-sizing: border-box;
+				}
+			}
+		}
+		.copyright{
+			padding: 0 0 25px;
+			text-align: center;
+		}
+	}
+}
