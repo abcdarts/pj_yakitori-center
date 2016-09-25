@@ -24,16 +24,17 @@
 				winW = $(window).width();
 
 				if(winW <= BP){
-					$('nav').css({'display':'none'});
+					$('nav.sp_navigation').css({'display':'none'});
 				}else{
-					$('nav').css({'display':'block'});
+					$('nav.sp_navigation').css({'display':'block'});
 				}
 			});
 		}
 
 		var SPNav = function(){
-			$('.sp_menu').on('click',function(){
-				$('.navigation').slideToggle();
+			$('.menu-button').on('click',function(){
+				$('nav.sp_navigation').slideToggle();
+				$(this).parent().toggleClass('is-open');
 			});
 		}
 
@@ -64,7 +65,7 @@
 			fade: false
 		});
 
-		//NavShow();
+		// NavShow();
 		SPNav();
 		RollOver();
 		SmoothScroll();
