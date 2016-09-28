@@ -18,14 +18,35 @@
 
   .chicken{
     position: fixed;
-    bottom: 380px;
+    bottom: 400px;
     width: 187px;
     z-index: 100;
+  }
+
+  .comment{
+    position: fixed;
+    bottom: 530px;
+    margin-left: -165px;
+    width: 188px;
+    z-index: 200;
+    transition-property: opacity;
+    transition-duration: 0.8s;
+
+    &.scene-01{
+      opacity: 0;
+    }
+
+    &.scene-02{
+      opacity: 0;
+    }
+
+    &.is-active{
+      opacity: 1;
+    }
   }
 }
 
 .menu_container{
-  padding: 0;
   width: 872px;
   padding-top: 70px;
 
@@ -59,4 +80,96 @@
   .note{
     padding-left: 20px;
   }
+}
+
+@media screen and ( max-width:1040px) {
+
+.bird_area{
+  display: none;
+}
+
+.menu_container{
+  width: 100%;
+
+  h1{
+    margin: 0 20px;
+    margin-bottom: 70px;
+  }
+
+  h2{
+    margin: 0 20px;
+    margin-bottom: 16px;
+  }
+
+}
+
+}
+
+@media screen and ( max-width:872px) {
+
+.menu_container{
+
+  h1{
+    margin: 0 3%;
+    margin-bottom: 70px;
+  }
+
+  h2{
+    margin: 0 3%;
+    margin-bottom: 16px;
+  }
+
+  .menu_list_container{
+    ul{
+      li{
+        float: left;
+        width: 30.1%;
+        padding: 0 0 20px 20px;
+
+        &.title{
+          width: 63%;
+        }
+      }
+    }
+  }
+}
+
+}
+
+
+@media screen and ( max-width:768px) {
+
+.menu_container{
+  padding-top: 30px;
+
+  h1{
+    margin-bottom: 20px;
+  }
+
+  h2{
+    margin: 0 3%;
+    margin-bottom: 16px;
+  }
+
+  .menu_list_container{
+
+    ul{
+      li{
+        float: left;
+        width: 29.3%;
+        padding: 0 0 10px 3%;
+
+        &.title{
+          width: 61.8%;
+        }
+      }
+    }
+  }
+
+  .note{
+    padding-left: 3%;
+    font-size: 12px;
+  }
+}
+
 }

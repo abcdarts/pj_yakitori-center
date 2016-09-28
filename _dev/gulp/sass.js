@@ -6,7 +6,7 @@ var notify = require('gulp-notify');
 var plumber = require('gulp-plumber');
 
 var options = {
-    outputStyle: 'compressed',
+    outputStyle: 'expanded',
     sourceMap: true,
     sourceComments: false
 };
