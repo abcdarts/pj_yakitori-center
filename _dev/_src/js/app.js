@@ -4,11 +4,11 @@
 
 		// ロールオーバー
 		var RollOver = function(){
-			$('img.js-rollover, input.js-rollover').each(function(){
+			$('img.js-rollover, input.js-rollover, button.js-rollover').each(function(){
 				this.originalSrc = $(this).attr('src');
 				this.rolloverSrc = this.originalSrc.replace(/(\.gif|\.jpg|\.png)/, "_on$1");
 			});
-			$('img.js-rollover, input.js-rollover').hover(function(){$(this).attr('src',this.rolloverSrc);},function(){$(this).attr('src',this.originalSrc);});
+			$('img.js-rollover, input.js-rollover, button.js-rollover').hover(function(){$(this).attr('src',this.rolloverSrc);},function(){$(this).attr('src',this.originalSrc);});
 			window.onunload=function(){
 				$('img.js-rollover, input.js-rollover').attr('src',this.originalSrc);
 			}
@@ -50,8 +50,10 @@
 		}
 
 		// NavShow();
+		setTimeout(function(){
+			RollOver();
+		},5000);
 		SPNav();
-		RollOver();
 		SmoothScroll();
 	});
 })();
