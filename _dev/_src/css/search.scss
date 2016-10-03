@@ -1,1 +1,392 @@
 @charset 'UTF-8';
+
+.wrapper{
+    background: url(/assets/images/search/search_bg_01.png) center top no-repeat;
+    width: 1200px;
+    height: 3559px;
+    padding-bottom: 0;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    .cover{
+        display: none;
+    }
+
+    .ttl{
+        display: block;
+        position: absolute;
+        top: 325px;
+        left: 85px;
+        width: 438px;
+        transform: scale(0);
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+
+        &.is-active{
+            transform: scale(1);
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-delay: 0.5s;
+            transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+        }
+    }
+
+    .item-01{
+        display: block;
+        position: absolute;
+        top: 98px;
+        right: 200px;
+        width: 540px;
+    }
+
+    .item-02{
+        display: block;
+        position: absolute;
+        top: 919px;
+        left: 583px;
+        width: 153px;
+    }
+
+    .item-03{
+        display: block;
+        position: absolute;
+        top: 1040px;
+        left: -225px;
+        width: 225px;
+    }
+
+    .item-05{
+        display: block;
+        position: absolute;
+        top: 1240px;
+        left: 755px;
+        width: 278px;
+    }
+
+    .item-06{
+        display: block;
+        position: absolute;
+        top: 1876px;
+        right: -270px;
+        width: 270px;
+    }
+
+    .item-07{
+        display: block;
+        position: absolute;
+        top: 2543px;
+        right: 178px;
+        width: 193px;
+    }
+
+    .item-08{
+        display: block;
+        position: absolute;
+        top: 2932px;
+        left: 510px;
+        width: 223px;
+        transform: scale(0);
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+
+        &.is-active{
+            transform: scale(1);
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+        }
+    }
+
+    .txt-01{
+        display: block;
+        position: absolute;
+        top: 2650px;
+        left: 140px;
+        width: 78px;
+    }
+
+    .spin_infinite {
+        /* keyframes に任意の名前を付ける */
+          -moz-animation-name: 'rotate1';
+          -webkit-animation-name: 'rotate1';
+          animation-name: 'rotate1';
+          -goog-ms-animation-name: 'rotate1';
+
+         /* 1動作(ここでは1回転)あたりの秒数 */
+          -moz-animation-duration: 4s;
+          -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+          -goog-ms-animation-duration: 4s;
+
+        /* 動作の向き、初期値はnormal 、逆再生は alternate */
+          -moz-animation-direction: normal;
+          -webkit-animation-direction: normal;
+          animation-direction: normal;
+          -goog-ms-animation-direction: normal;
+
+        /* 動き方 linear, ease, easein, ease-out, ease-in-out */
+          -moz-animation-timing-function: linear;
+          -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+          -goog-ms-animation-timing-function: linear;
+
+        /* 動作 (ここでは回転) の回数を数値で指定、無限ループは infinite */
+          -moz-animation-iteration-count: infinite;
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+          -goog-ms-animation-iteration-count: infinite;
+        }
+
+        @-webkit-keyframes 'rotate1' {
+          from {
+          /* 最初の回転角 */
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -goog-ms-transform: rotate(0deg);
+          }
+          /* 1動作の最後 ( 1duration 後) の回転角 */
+          to {
+            -moz-transform: rotate(-360deg);
+            -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+            -goog-ms-transform: rotate(-360deg);
+          }
+        }
+
+    .floating{
+    	animation-name: floating;
+    	-webkit-animation-name: floating;
+
+    	animation-duration: 1.5s;
+    	-webkit-animation-duration: 1.5s;
+
+    	animation-iteration-count: infinite;
+    	-webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes floating {
+    	0% {
+    		transform: translateY(0%);
+    	}
+    	50% {
+    		transform: translateY(8%);
+    	}
+    	100% {
+    		transform: translateY(0%);
+    	}
+    }
+
+    @-webkit-keyframes floating {
+    	0% {
+    		-webkit-transform: translateY(0%);
+    	}
+    	50% {
+    		-webkit-transform: translateY(8%);
+    	}
+    	100% {
+    		-webkit-transform: translateY(0%);
+    	}
+    }
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+.wrapper{
+    background: none;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    .container{
+        width: 100%;
+    }
+
+    .cover{
+        display: block;
+    }
+
+    .ttl{
+        display: block;
+        position: absolute;
+        top: 9.1%;
+        left: 7%;
+        width: 438px;
+        transform: scale(1);
+    }
+
+    .item-01{
+        display: block;
+        position: absolute;
+        top: 3.2%;
+        right: 19.4%;
+        width: 540px;
+    }
+
+    .item-02{
+        display: block;
+        position: absolute;
+        top: 27%;
+        left: 49%;
+        width: 153px;
+    }
+
+    .item-03{
+        display: block;
+        position: absolute;
+        top: 29.6%;
+        left: 18%;
+        width: 225px;
+    }
+
+    .item-05{
+        display: block;
+        position: absolute;
+        top: 35%;
+        left: 64%;
+        width: 278px;
+    }
+
+    .item-06{
+        display: block;
+        position: absolute;
+        top: 53.5%;
+        right: 29%;
+        width: 270px;
+    }
+
+    .item-07{
+        display: block;
+        position: absolute;
+        top: 72.5%;
+        right: 15%;
+        width: 193px;
+    }
+
+    .item-08{
+        display: block;
+        position: absolute;
+        top: 83.5%;
+        left: 43%;
+        width: 223px;
+        transform: scale(1);
+    }
+
+    .txt-01{
+        display: block;
+        position: absolute;
+        top: 75.5%;
+        left: 12%;
+        width: 78px;
+    }
+}
+
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+.wrapper{
+
+    .container{
+        width: 100%;
+    }
+
+    .ttl{
+        width: 219px;
+    }
+
+    .item-01{
+        width: 270px;
+    }
+
+    .item-02{
+        width: 76px;
+    }
+
+    .item-03{
+        width: 112px;
+    }
+
+    .item-05{
+        width: 139px;
+    }
+
+    .item-06{
+        width: 135px;
+    }
+
+    .item-07{
+        width: 96px;
+    }
+
+    .item-08{
+        width: 111px;
+    }
+
+    .txt-01{
+        width: 39px;
+    }
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+.wrapper{
+
+    .container{
+        width: 100%;
+    }
+
+    .ttl{
+        width: 119px;
+    }
+
+    .item-01{
+        width: 135px;
+    }
+
+    .item-02{
+        width: 38px;
+    }
+
+    .item-03{
+        width: 60px;
+    }
+
+    .item-05{
+        width: 70px;
+    }
+
+    .item-06{
+        width: 70px;
+    }
+
+    .item-07{
+        width: 48px;
+    }
+
+    .item-08{
+        width: 90px;
+        top: 78.5%;
+        left: 37%;
+    }
+
+    .txt-01{
+        width: 20px;
+    }
+}
+
+}
