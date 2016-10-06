@@ -1,0 +1,90 @@
+.wrapper {
+  padding-bottom: 0;
+}
+
+.top-content {
+  border-top: 17px solid #C9000A;
+}
+
+.top-content.information {
+  background: url(/assets/images/top/top_bg_01.png) center top no-repeat;
+  height: 542px;
+}
+
+.top-content.information .hdg {
+  width: 592px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.top-content.information .slick-slider {
+  width: 594px;
+  margin: 0 auto;
+}
+
+.top-content.information .slick-slider .slide {
+  width: 171px;
+  padding: 6px;
+  margin: 0 5.5px;
+  background: #fff;
+  box-shadow: 2px 5px 10px 0px #aaaaaa;
+}
+
+.top-content.information .slick-slider .slide img {
+  width: 177px;
+}
+
+.top-content.instagram {
+  background: url(/assets/images/top/top_bg_02.png) center top no-repeat;
+  height: 663px;
+}
+
+.top-content.instagram .hdg {
+  width: 592px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.top-content.facebook {
+  background: url(/assets/images/top/top_bg_03.png) center top no-repeat;
+  height: 686px;
+}
+
+.top-content.facebook .inner {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  zoom: 1;
+  padding: 45px 0 0;
+}
+
+.top-content.facebook .inner .hdg {
+  width: 437px;
+  margin: 0 auto;
+  padding: 20px 0;
+  float: left;
+}
+
+.top-content.facebook .inner .chicken-container {
+  float: left;
+  overflow: hidden;
+  zoom: 1;
+  width: 460px;
+}
+
+.top-content.facebook .inner .chicken-container .btn-to-fb {
+  float: left;
+  width: 212px;
+  margin: 60px 0 0;
+}
+
+.top-content.facebook .inner .chicken-container .image {
+  float: right;
+  width: 228px;
+}
+
+.top-content.facebook .inner .fb-container {
+  width: 500px;
+  float: right;
+  border: 1px solid #ccc;
+}

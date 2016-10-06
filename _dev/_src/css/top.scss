@@ -18,6 +18,23 @@ $base-color: #C9000A;
       margin: 0 auto;
       padding: 20px 0;
     }
+
+    .slick-slider{
+      width: 594px;
+      margin: 0 auto;
+
+      .slide{
+        width: 171px;
+        padding: 6px;
+        margin: 0 5.5px;
+        background: #fff;
+        box-shadow:2px 5px 10px 0px #aaaaaa;
+
+        img{
+          width: 177px;
+        }
+      }
+    }
   }
 
   &.instagram{

@@ -1,0 +1,142 @@
+.bird_area {
+  background: url(/assets/images/menu/menu_bg_01.png) 131px top repeat-y;
+  background-size: 10.6%;
+  float: right;
+  width: 168px;
+  height: 4854px;
+  position: relative;
+}
+
+.bird_area .chicken_bg {
+  display: block;
+  position: absolute;
+  right: -114px;
+  bottom: 44px;
+  width: 279px;
+}
+
+.bird_area .chicken {
+  position: fixed;
+  bottom: 400px;
+  width: 187px;
+  z-index: 100;
+}
+
+.bird_area .comment {
+  position: fixed;
+  bottom: 530px;
+  margin-left: -165px;
+  width: 188px;
+  z-index: 200;
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.bird_area .comment.scene-01 {
+  opacity: 0;
+}
+
+.bird_area .comment.scene-02 {
+  opacity: 0;
+}
+
+.bird_area .comment.is-active {
+  opacity: 1;
+}
+
+.menu_container {
+  width: 872px;
+  padding-top: 70px;
+}
+
+.menu_container h1 {
+  margin-left: 20px;
+  margin-bottom: 70px;
+}
+
+.menu_container h2 {
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.menu_container .menu_list_container ul {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.menu_container .menu_list_container ul li {
+  float: left;
+  width: 198px;
+  padding: 0 0 20px 20px;
+}
+
+.menu_container .menu_list_container ul li.title {
+  width: 416px;
+}
+
+.menu_container .note {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1040px) {
+  .bird_area {
+    display: none;
+  }
+  .menu_container {
+    width: 100%;
+  }
+  .menu_container h1 {
+    margin: 0 20px;
+    margin-bottom: 70px;
+  }
+  .menu_container h2 {
+    margin: 0 20px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .menu_container h1 {
+    margin: 0 3%;
+    margin-bottom: 70px;
+  }
+  .menu_container h2 {
+    margin: 0 3%;
+    margin-bottom: 16px;
+  }
+  .menu_container .menu_list_container ul li {
+    float: left;
+    width: 30.1%;
+    padding: 0 0 20px 20px;
+  }
+  .menu_container .menu_list_container ul li.title {
+    width: 63%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu_container {
+    padding-top: 30px;
+  }
+  .menu_container h1 {
+    margin-bottom: 20px;
+  }
+  .menu_container h2 {
+    margin: 0 3%;
+    margin-bottom: 16px;
+  }
+  .menu_container .menu_list_container ul li {
+    float: left;
+    width: 29.3%;
+    padding: 0 0 10px 3%;
+  }
+  .menu_container .menu_list_container ul li.title {
+    width: 61.8%;
+  }
+  .menu_container .note {
+    padding-left: 3%;
+    font-size: 12px;
+  }
+}

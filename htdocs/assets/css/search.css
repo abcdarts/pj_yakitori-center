@@ -1,0 +1,359 @@
+@charset "UTF-8";
+.wrapper {
+  background: url(/assets/images/search/search_bg_01.png) center top no-repeat;
+  width: 1200px;
+  height: 3559px;
+  padding-bottom: 0;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper .cover {
+  display: none;
+}
+
+.wrapper .ttl {
+  display: block;
+  position: absolute;
+  top: 325px;
+  left: 85px;
+  width: 438px;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-property: -webkit-transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.wrapper .ttl.is-active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.wrapper .item-01 {
+  display: block;
+  position: absolute;
+  top: 98px;
+  right: 200px;
+  width: 540px;
+}
+
+.wrapper .item-02 {
+  display: block;
+  position: absolute;
+  top: 919px;
+  left: 583px;
+  width: 153px;
+}
+
+.wrapper .item-03 {
+  display: block;
+  position: absolute;
+  top: 1040px;
+  left: -225px;
+  width: 225px;
+}
+
+.wrapper .item-05 {
+  display: block;
+  position: absolute;
+  top: 1240px;
+  left: 755px;
+  width: 278px;
+}
+
+.wrapper .item-06 {
+  display: block;
+  position: absolute;
+  top: 1876px;
+  right: -270px;
+  width: 270px;
+}
+
+.wrapper .item-07 {
+  display: block;
+  position: absolute;
+  top: 2543px;
+  right: 178px;
+  width: 193px;
+}
+
+.wrapper .item-08 {
+  display: block;
+  position: absolute;
+  top: 2932px;
+  left: 510px;
+  width: 223px;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-property: -webkit-transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.wrapper .item-08.is-active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+          transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.wrapper .txt-01 {
+  display: block;
+  position: absolute;
+  top: 2650px;
+  left: 140px;
+  width: 78px;
+}
+
+.wrapper .spin_infinite {
+  /* keyframes に任意の名前を付ける */
+  -webkit-animation-name: 'rotate1';
+  animation-name: 'rotate1';
+  -goog-ms-animation-name: 'rotate1';
+  /* 1動作(ここでは1回転)あたりの秒数 */
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -goog-ms-animation-duration: 4s;
+  /* 動作の向き、初期値はnormal 、逆再生は alternate */
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -goog-ms-animation-direction: normal;
+  /* 動き方 linear, ease, easein, ease-out, ease-in-out */
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -goog-ms-animation-timing-function: linear;
+  /* 動作 (ここでは回転) の回数を数値で指定、無限ループは infinite */
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -goog-ms-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes 'rotate1' {
+  from {
+    /* 最初の回転角 */
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -goog-ms-transform: rotate(0deg);
+  }
+  /* 1動作の最後 ( 1duration 後) の回転角 */
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -goog-ms-transform: rotate(-360deg);
+  }
+}
+
+.wrapper .floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+            transform: translateY(8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    background: none;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .wrapper .container {
+    width: 100%;
+  }
+  .wrapper .cover {
+    display: block;
+  }
+  .wrapper .ttl {
+    display: block;
+    position: absolute;
+    top: 9.1%;
+    left: 7%;
+    width: 438px;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .wrapper .item-01 {
+    display: block;
+    position: absolute;
+    top: 3.2%;
+    right: 19.4%;
+    width: 540px;
+  }
+  .wrapper .item-02 {
+    display: block;
+    position: absolute;
+    top: 27%;
+    left: 49%;
+    width: 153px;
+  }
+  .wrapper .item-03 {
+    display: block;
+    position: absolute;
+    top: 29.6%;
+    left: 18%;
+    width: 225px;
+  }
+  .wrapper .item-05 {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 64%;
+    width: 278px;
+  }
+  .wrapper .item-06 {
+    display: block;
+    position: absolute;
+    top: 53.5%;
+    right: 29%;
+    width: 270px;
+  }
+  .wrapper .item-07 {
+    display: block;
+    position: absolute;
+    top: 72.5%;
+    right: 15%;
+    width: 193px;
+  }
+  .wrapper .item-08 {
+    display: block;
+    position: absolute;
+    top: 83.5%;
+    left: 43%;
+    width: 223px;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .wrapper .txt-01 {
+    display: block;
+    position: absolute;
+    top: 75.5%;
+    left: 12%;
+    width: 78px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wrapper .container {
+    width: 100%;
+  }
+  .wrapper .ttl {
+    width: 219px;
+  }
+  .wrapper .item-01 {
+    width: 270px;
+  }
+  .wrapper .item-02 {
+    width: 76px;
+  }
+  .wrapper .item-03 {
+    width: 112px;
+  }
+  .wrapper .item-05 {
+    width: 139px;
+  }
+  .wrapper .item-06 {
+    width: 135px;
+  }
+  .wrapper .item-07 {
+    width: 96px;
+  }
+  .wrapper .item-08 {
+    width: 111px;
+  }
+  .wrapper .txt-01 {
+    width: 39px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .container {
+    width: 100%;
+  }
+  .wrapper .ttl {
+    width: 119px;
+  }
+  .wrapper .item-01 {
+    width: 135px;
+  }
+  .wrapper .item-02 {
+    width: 38px;
+  }
+  .wrapper .item-03 {
+    width: 60px;
+  }
+  .wrapper .item-05 {
+    width: 70px;
+  }
+  .wrapper .item-06 {
+    width: 70px;
+  }
+  .wrapper .item-07 {
+    width: 48px;
+  }
+  .wrapper .item-08 {
+    width: 90px;
+    top: 78.5%;
+    left: 37%;
+  }
+  .wrapper .txt-01 {
+    width: 20px;
+  }
+}
