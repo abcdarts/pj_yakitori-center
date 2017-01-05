@@ -12,7 +12,7 @@
     });
 
     function scene(y){
-      if(y >= 2800){
+      if(y >= 4500){
         $('#js-birdArea .scene-01').removeClass('is-active');
         $('#js-birdArea .scene-02').addClass('is-active');
       }else if(100 <= y){

@@ -3,16 +3,16 @@
   background-size: 10.6%;
   float: right;
   width: 168px;
-  height: 4854px;
+  height: 8619px;
   position: relative;
 }
 
 .bird_area .chicken_bg {
   display: block;
   position: absolute;
-  right: -114px;
-  bottom: 44px;
-  width: 279px;
+  right: -50px;
+  bottom: 15px;
+  width: 158px;
 }
 
 .bird_area .chicken {
@@ -51,9 +51,25 @@
   padding-top: 70px;
 }
 
+.menu_container .link_menu {
+  overflow: hidden;
+  zoom: 1;
+  padding-left: 15px;
+  margin-bottom: 70px;
+}
+
+.menu_container .link_menu li {
+  width: 426px;
+  float: left;
+}
+
+.menu_container .link_menu li:nth-child(2n) {
+  float: right;
+}
+
 .menu_container h1 {
   margin-left: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .menu_container h2 {
@@ -68,16 +84,21 @@
 
 .menu_container .menu_list_container ul li {
   float: left;
-  width: 198px;
-  padding: 0 0 20px 20px;
+  width: 199px;
+  padding: 0 0 20px 19px;
 }
 
 .menu_container .menu_list_container ul li.title {
   width: 416px;
 }
 
+.menu_container .menu_list_container ul li.title.drink {
+  margin-bottom: 20px;
+}
+
 .menu_container .note {
   padding-left: 20px;
+  margin: 10px 0 30px;
 }
 
 @media screen and (max-width: 1040px) {
@@ -89,7 +110,7 @@
   }
   .menu_container h1 {
     margin: 0 20px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   .menu_container h2 {
     margin: 0 20px;
@@ -100,7 +121,7 @@
 @media screen and (max-width: 872px) {
   .menu_container h1 {
     margin: 0 3%;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   .menu_container h2 {
     margin: 0 3%;
@@ -113,6 +134,9 @@
   }
   .menu_container .menu_list_container ul li.title {
     width: 63%;
+  }
+  .menu_container .menu_list_container--drink {
+    padding: 0 10px;
   }
 }
 
@@ -133,7 +157,11 @@
     padding: 0 0 10px 3%;
   }
   .menu_container .menu_list_container ul li.title {
-    width: 61.8%;
+    width: 61.7%;
+  }
+  .menu_container .menu_list_container ul li.title.drink {
+    width: 45.3%;
+    margin-bottom: 20px;
   }
   .menu_container .note {
     padding-left: 3%;

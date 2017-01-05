@@ -51,7 +51,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
       text-size-adjust: 100%;
-  background: #F9E920;
 }
 
 a {
@@ -84,6 +83,10 @@ img {
 }
 
 .c_hdr_content {
+  background: #F9E920;
+}
+
+.c_hdr_content .inner {
   padding: 10px 0;
   width: 1040px;
   margin: 0 auto;
@@ -248,7 +251,7 @@ img {
 }
 
 @media screen and (max-width: 1040px) {
-  .c_hdr_content {
+  .c_hdr_content .inner {
     padding: 10px;
     width: 100%;
   }
@@ -318,6 +321,7 @@ img {
   .c_hdr_content {
     padding: 10px;
     width: 100%;
+    box-sizing: border-box;
   }
   .c_hdr_content .logo {
     float: left;
@@ -333,7 +337,7 @@ img {
     display: block;
     position: absolute;
     right: 9px;
-    top: 10px;
+    top: 17px;
   }
   .c_hdr_content .r_content .menu-button i {
     display: block;
