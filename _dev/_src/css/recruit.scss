@@ -15,6 +15,7 @@ $bg-color: #ffe100;
 	padding: 10px;
 	margin: 0 20px;
 	background: url(../../assets/images/recruit/bg_02.png) center center;
+
 	ul {
 		overflow: hidden;
 		margin: 0 auto;
@@ -37,6 +38,12 @@ $bg-color: #ffe100;
 	padding: 10px;
 	background: url(../../assets/images/recruit/bg_01.png) center center;
 	background-size: cover;
+
+  h2{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .recruit__btn {

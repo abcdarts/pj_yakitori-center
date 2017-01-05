@@ -37,6 +37,12 @@
   background-size: cover;
 }
 
+.recruit__kyevisual h2 {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
 .recruit__btn {
   margin-top: 30px;
   text-align: center;
