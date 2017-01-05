@@ -1,3 +1,7 @@
+.wrapper {
+  background: #ffe100;
+}
+
 .container {
   width: 1040px;
   margin: 0 auto;
@@ -24,7 +28,7 @@
 .recruit__subVisual {
   padding: 20px;
   margin-top: -10px;
-  background-color: #f9e920;
+  background: #ffe100;
 }
 
 .recruit__kyevisual {
