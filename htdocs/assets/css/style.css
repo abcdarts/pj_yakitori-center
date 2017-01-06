@@ -173,6 +173,10 @@ img {
   padding-bottom: 90px;
 }
 
+.wrapper.pb0 {
+  padding-bottom: 0;
+}
+
 .container {
   width: 1040px;
   margin: 0 auto;

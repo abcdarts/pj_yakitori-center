@@ -31,7 +31,6 @@
     width: 100%;
     padding-left: 0;
     box-sizing: border-box;
-    padding-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -47,8 +46,15 @@
   .kodawari_box ul li {
     float: none;
     width: 100%;
-    padding: 15px;
+    padding: 0 15px;
     box-sizing: border-box;
+    margin: 15px 0;
+  }
+  .kodawari_box ul li:nth-child(2n) {
+    border-left: 1px solid #171717;
+  }
+  .kodawari_box ul li.bdnone {
+    border: none;
   }
 }
 
@@ -69,7 +75,7 @@
   }
   .kodawari__header h3 {
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 0 10px;
   }
   .kodawari__header h3 img {
     width: 25%;
@@ -91,7 +97,8 @@
   .kodawari_box ul li {
     float: left;
     width: 50%;
-    padding: 15px;
+    padding: 0 15px;
+    margin: 15px 0;
     box-sizing: border-box;
   }
 }
@@ -114,7 +121,7 @@
   }
   .kodawari__header h3 {
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 0 10px;
   }
   .kodawari__header h3 img {
     width: 45%;
@@ -140,7 +147,8 @@
   .kodawari_box ul li {
     float: left;
     width: 50%;
-    padding: 15px;
+    padding: 0 15px;
+    margin: 15px 0;
     box-sizing: border-box;
   }
   .border {

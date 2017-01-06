@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 
-@media screen and (min-width:300px) { 
+@media screen and (min-width:300px) {
 	.container {
 		width: 100%;
 		background: url(../../assets/images/kodawari/bg.png) center center;
@@ -10,16 +10,16 @@
 	.kodawari__wrap {
 		padding: 0px 20px;
 	}
-	
+
 
 	.kodawari__header {
 			h2 {
 				text-align: center;
 				padding: 20px 0;
-				
+
 				img {
-					width: 80%;			
-					
+					width: 80%;
+
 				}
 			}
 			h3 {
@@ -40,12 +40,11 @@
 			width: 100%;
 			padding-left: 0;
 			box-sizing: border-box;
-			padding-bottom: 15px;
 			padding-left: 10px;
 			padding-right: 10px;
 			&:nth-of-type(1) {
 				margin-left: 0;
-			} 
+			}
 		}
 	}
 	.u-ajs__mgt20 {
@@ -57,12 +56,21 @@
 			li {
 				float: none;
 				width: 100%;
-				padding: 15px;
+				padding: 0 15px;
 				box-sizing: border-box;
+				margin: 15px 0;
+
+				&:nth-child(2n) {
+					border-left: 1px solid #171717;
+				}
+
+				&.bdnone {
+					border: none;
+				}
 			}
 		}
 	}
- 
+
 }
 @media screen and (min-width:768px) and ( max-width:1024px) {
 	.container {
@@ -78,15 +86,15 @@
 		h2 {
 			text-align: center;
 			padding: 60px 0;
-			
+
 			img {
-				width: 60%;			
-				
+				width: 60%;
+
 			}
 		}
 		h3 {
 			text-align: center;
-			margin: 30px 0;
+			margin: 30px 0 10px;
 			img {
 				width: 25%;
 			}
@@ -109,7 +117,8 @@
 			li {
 				float: left;
 				width: 50%;
-				padding: 15px;
+				padding: 0 15px;
+				margin: 15px 0;
 				box-sizing: border-box;
 			}
 		}
@@ -132,15 +141,15 @@
 		h2 {
 			text-align: center;
 			padding: 60px 0;
-			
+
 			img {
-				width: 60%;			
-				
+				width: 60%;
+
 			}
 		}
 		h3 {
 			text-align: center;
-			margin: 30px 0;
+			margin: 30px 0 10px;
 			img {
 				width: 45%;
 			}
@@ -159,7 +168,7 @@
 			box-sizing: border-box;
 			&:nth-of-type(1) {
 				margin-left: -6px;
-			} 
+			}
 		}
 	}
 
@@ -169,7 +178,8 @@
 			li {
 				float: left;
 				width: 50%;
-				padding: 15px;
+				padding: 0 15px;
+				margin: 15px 0;
 				box-sizing: border-box;
 			}
 		}
@@ -191,9 +201,5 @@
 	}
 
 
- 
+
 }
-
-
-
-

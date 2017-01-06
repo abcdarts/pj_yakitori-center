@@ -138,6 +138,10 @@ img{
 	border-top: 2px solid #fff;
 	background: url(/assets/images/common/c_bg_01.png) center top;
 	padding-bottom: 90px;
+
+	&.pb0 {
+		padding-bottom: 0;
+	}
 }
 
 .container{
