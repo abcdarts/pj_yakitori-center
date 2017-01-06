@@ -205,6 +205,12 @@ img {
   right: 0px;
 }
 
+.c_ftr_content .ftr_wrapper .fb_iframe_widget {
+  position: absolute;
+  top: -40px;
+  right: 10%;
+}
+
 .c_ftr_content .ftr_wrapper .ftr_inner {
   padding: 28px 0;
   width: 1040px;
@@ -294,6 +300,12 @@ img {
     position: absolute;
     top: -183px;
     right: 0px;
+  }
+  .c_ftr_content .ftr_wrapper .fb_iframe_widget {
+    position: absolute;
+    top: -40px;
+    right: auto;
+    left: 20px;
   }
   .c_ftr_content .ftr_wrapper .ftr_inner {
     width: 100%;

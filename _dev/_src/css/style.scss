@@ -171,13 +171,18 @@ img{
 			right: 0px;
 		}
 
+    .fb_iframe_widget{
+      position: absolute;
+      top: -40px;
+      right: 10%;
+    }
+
 		.ftr_inner{
 			padding: 28px 0;
 			width: 1040px;
 			margin: 0 auto;
 			overflow: hidden;
 			zoom: 1;
-
 
 			.ftr_navigation{
 				padding: 10px 0;
@@ -277,6 +282,13 @@ img{
 			top: -183px;
 			right: 0px;
 		}
+
+    .fb_iframe_widget{
+      position: absolute;
+      top: -40px;
+      right: auto;
+      left: 20px;
+    }
 
 		.ftr_inner{
 			width: 100%;
