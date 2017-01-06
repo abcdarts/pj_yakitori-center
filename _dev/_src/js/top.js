@@ -36,7 +36,7 @@
 			nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"><img class="js-rollover" src="/assets/images/top/top_slider_next.png"></button>'
     });
 
-		$('a.colorbox').colorbox({rel:'info'});
+		// $('a.colorbox').colorbox({rel:'info'});
 
 		var userFeed = new Instafeed({
 			get: 'user',

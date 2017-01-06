@@ -5,15 +5,15 @@
   background-size: 10.6%;
   float: right;
   width: 168px;
-  height: 4854px;
+  height: 8619px;
   position: relative;
 
   .chicken_bg{
     display: block;
     position: absolute;
-    right: -114px;
-    bottom: 44px;
-    width: 279px;
+    right: -50px;
+    bottom: 15px;
+    width: 158px;
   }
 
   .chicken{
@@ -50,9 +50,25 @@
   width: 872px;
   padding-top: 70px;
 
+  .link_menu{
+    overflow: hidden;
+    zoom: 1;
+    padding-left: 15px;
+    margin-bottom: 70px;
+
+    li{
+      width: 426px;
+      float: left;
+
+      &:nth-child(2n){
+        float: right;
+      }
+    }
+  }
+
   h1{
     margin-left: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   h2{
@@ -67,11 +83,15 @@
 
       li{
         float: left;
-        width: 198px;
-        padding: 0 0 20px 20px;
+        width: 199px;
+        padding: 0 0 20px 19px;
 
         &.title{
           width: 416px;
+
+          &.drink{
+            margin-bottom: 20px;
+          }
         }
       }
     }
@@ -79,6 +99,7 @@
 
   .note{
     padding-left: 20px;
+    margin: 10px 0 30px;
   }
 }
 
@@ -93,7 +114,7 @@
 
   h1{
     margin: 0 20px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   h2{
@@ -111,7 +132,7 @@
 
   h1{
     margin: 0 3%;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   h2{
@@ -131,6 +152,10 @@
         }
       }
     }
+  }
+
+  .menu_list_container--drink{
+    padding: 0 10px;
   }
 }
 
@@ -160,7 +185,12 @@
         padding: 0 0 10px 3%;
 
         &.title{
-          width: 61.8%;
+          width: 61.7%;
+
+          &.drink{
+            width: 45.3%;
+            margin-bottom: 20px;
+          }
         }
       }
     }

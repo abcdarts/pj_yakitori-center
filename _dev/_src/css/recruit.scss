@@ -1,5 +1,11 @@
 @charset 'UTF-8';
 
+$bg-color: #ffe100;
+
+.wrapper {
+  background: $bg-color;
+}
+
 .container {
 	width: 1040px;
 	margin: 0 auto;
@@ -9,6 +15,7 @@
 	padding: 10px;
 	margin: 0 20px;
 	background: url(../../assets/images/recruit/bg_02.png) center center;
+
 	ul {
 		overflow: hidden;
 		margin: 0 auto;
@@ -24,13 +31,19 @@
 .recruit__subVisual {
 	padding: 20px;
 	margin-top: -10px;
-	background-color: #f9e920;
+	background: $bg-color;
 }
 
 .recruit__kyevisual {
 	padding: 10px;
 	background: url(../../assets/images/recruit/bg_01.png) center center;
 	background-size: cover;
+
+  h2{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .recruit__btn {
