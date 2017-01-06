@@ -19,18 +19,18 @@
         top: 325px;
         left: 85px;
         width: 438px;
-        transform: scale(0);
-        transition-property: transform;
-        transition-duration: 0.5s;
-        transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+        // transform: scale(0);
+        // transition-property: transform;
+        // transition-duration: 0.5s;
+        // transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
 
-        &.is-active{
-            transform: scale(1);
-            transition-property: transform;
-            transition-duration: 0.5s;
-            transition-delay: 0.5s;
-            transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
-        }
+        // &.is-active{
+        //     transform: scale(1);
+        //     transition-property: transform;
+        //     transition-duration: 0.5s;
+        //     transition-delay: 0.5s;
+        //     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+        // }
     }
 
     .item-01{
@@ -87,17 +87,17 @@
         top: 2932px;
         left: 510px;
         width: 223px;
-        transform: scale(0);
-        transition-property: transform;
-        transition-duration: 0.5s;
-        transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
-
-        &.is-active{
-            transform: scale(1);
-            transition-property: transform;
-            transition-duration: 0.5s;
-            transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
-        }
+        // transform: scale(0);
+        // transition-property: transform;
+        // transition-duration: 0.5s;
+        // transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+        //
+        // &.is-active{
+        //     transform: scale(1);
+        //     transition-property: transform;
+        //     transition-duration: 0.5s;
+        //     transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1.0);
+        // }
     }
 
     .txt-01{
@@ -161,8 +161,8 @@
     	animation-name: floating;
     	-webkit-animation-name: floating;
 
-    	animation-duration: 1.5s;
-    	-webkit-animation-duration: 1.5s;
+    	animation-duration: 3s;
+    	-webkit-animation-duration: 3s;
 
     	animation-iteration-count: infinite;
     	-webkit-animation-iteration-count: infinite;
@@ -186,6 +186,41 @@
     	}
     	50% {
     		-webkit-transform: translateY(8%);
+    	}
+    	100% {
+    		-webkit-transform: translateY(0%);
+    	}
+    }
+
+    .r_floating{
+    	animation-name: r_floating;
+    	-webkit-animation-name: r_floating;
+
+    	animation-duration: 3s;
+    	-webkit-animation-duration: 3s;
+
+    	animation-iteration-count: infinite;
+    	-webkit-animation-iteration-count: infinite;
+    }
+
+    @keyframes r_floating {
+    	0% {
+    		transform: translateY(0%);
+    	}
+    	50% {
+    		transform: translateY(-8%);
+    	}
+    	100% {
+    		transform: translateY(0%);
+    	}
+    }
+
+    @-webkit-keyframes r_floating {
+    	0% {
+    		-webkit-transform: translateY(0%);
+    	}
+    	50% {
+    		-webkit-transform: translateY(-8%);
     	}
     	100% {
     		-webkit-transform: translateY(0%);

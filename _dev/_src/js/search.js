@@ -45,9 +45,9 @@
                     }, 5000);
                 }
 
-                if(sc > 2450){
-                    $('.item-08').addClass('is-active');
-                }
+                // if(sc > 2450){
+                //     $('.item-08').addClass('is-active');
+                // }
 
             });
         }
