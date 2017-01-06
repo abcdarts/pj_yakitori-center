@@ -334,8 +334,12 @@ img{
 
 	.logo{
 		float: left;
-		width: 200px;
+		width: 150px;
 	}
+
+  .inner{
+    padding: 0;
+  }
 
 	.r_content{
 		padding: 0;
@@ -347,7 +351,7 @@ img{
 			display: block;
 			position: absolute;
 			right: 9px;
-			top: 17px;
+			top: 7px;
 
 			i{
 				display: block;

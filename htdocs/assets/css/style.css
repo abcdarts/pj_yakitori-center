@@ -341,7 +341,10 @@ img {
   }
   .c_hdr_content .logo {
     float: left;
-    width: 200px;
+    width: 150px;
+  }
+  .c_hdr_content .inner {
+    padding: 0;
   }
   .c_hdr_content .r_content {
     padding: 0;
@@ -353,7 +356,7 @@ img {
     display: block;
     position: absolute;
     right: 9px;
-    top: 17px;
+    top: 7px;
   }
   .c_hdr_content .r_content .menu-button i {
     display: block;
