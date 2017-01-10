@@ -1,8 +1,8 @@
 <?php
 
 	// 設定
-	$client_id = 'a4e752a8327b405e9a9168e64e0c1c50' ;		// クライアントID
-	$client_secret = '4c7c5085101e4d4193050b251910fae6' ;		// クライアントシークレット
+	$client_id = '35bc06ca8c044e128a28cc6be3faf78a' ;		// クライアントID
+	$client_secret = '7a1819df91684b9095e17076d469f014' ;		// クライアントシークレット
 	$redirect_uri = explode( '?' , ( !isset($_SERVER['HTTPS']) || empty($_SERVER['HTTPS']) ? 'http://' : 'https://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] )[0] ;		// このプログラムを設置するURL
 	$scope = 'basic+comments+relationships+likes' ;		// スコープ
 

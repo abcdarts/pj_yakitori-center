@@ -36,15 +36,32 @@
 			nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"><img class="js-rollover" src="/assets/images/top/top_slider_next.png"></button>'
     });
 
-		// $('a.colorbox').colorbox({rel:'info'});
+		$('#instafeed a').on('click', function(e){
+      e.preventDefault();
+      // $(this).colorbox({rel:'instagram'});
+    });
 
 		var userFeed = new Instafeed({
 			get: 'user',
-			// template: '<li><img src=”{{image}}” alt=”{{caption}}”></li>',
-			userId: '3997144018',
-			accessToken: '3997144018.e511589.b3cac70c8b5f40cba2822d202801e795'
+		  template: '<li class="slide"><a href="{{link}}"><img src="{{image}}" alt="{{caption}}"></a></li>',
+			userId: '4320724214',
+			accessToken: '4320724214.35bc06c.c65eb74f94e741d0a5cbcc01b62592a9',
+
+      success: function(){
+        setTimeout(function(){
+          $('#instafeed').slick({
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: true,
+            fade: false,
+            slide: '.slide',
+      			prevArrow: '<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Prev" role="button"><img class="js-rollover" src="/assets/images/top/top_slider_prev.png"></button>',
+      			nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"><img class="js-rollover" src="/assets/images/top/top_slider_next.png"></button>'
+          });
+        }, 1000);
+      }
 		});
-		// userFeed.run();
+		userFeed.run();
 
   });
 })();

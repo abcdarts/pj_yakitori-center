@@ -6,6 +6,13 @@ $base-color: #C9000A;
   padding-bottom: 0;
 }
 
+.slider {
+  display:none;
+}
+.slider.slick-initialized {
+  display: block;
+}
+
 .top-content{
   border-top: 17px solid $base-color;
 
@@ -39,12 +46,31 @@ $base-color: #C9000A;
 
   &.instagram{
     background: url(/assets/images/top/top_bg_02.png) center top no-repeat;
-    height: 663px;
+    // height: 663px;
+    height: 542px;
 
     .hdg{
       width: 592px;
       margin: 0 auto;
       padding: 20px 0;
+    }
+
+    .slick-slider{
+      width: 594px;
+      margin: 0 auto;
+
+       a{
+          display: block;
+          width: 176px;
+          padding: 6px;
+          margin: 0 5.5px;
+          background: #fff;
+          box-shadow:2px 5px 10px 0px #aaaaaa;
+
+        img{
+          width: 177px;
+        }
+      }
     }
   }
 
@@ -131,7 +157,8 @@ $base-color: #C9000A;
 
     &.instagram{
       background: url(/assets/images/top/top_bg_02.png) center top no-repeat;
-      height: 663px;
+      // height: 663px;
+      height: 542px;
 
       .hdg{
         width: 592px;

@@ -195,6 +195,67 @@
   z-index: 100;
 }
 
+#instafeed .slick-prev,
+#instafeed .slick-next {
+  position: absolute;
+  display: block;
+  height: 47px;
+  width: 145px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: auto;
+  bottom: -50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+#instafeed .slick-prev:hover, #instafeed .slick-prev:focus,
+#instafeed .slick-next:hover,
+#instafeed .slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+
+#instafeed .slick-prev:hover:before, #instafeed .slick-prev:focus:before,
+#instafeed .slick-next:hover:before,
+#instafeed .slick-next:focus:before {
+  opacity: 1;
+}
+
+#instafeed .slick-prev.slick-disabled:before,
+#instafeed .slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+#instafeed .slick-prev:before,
+#instafeed .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#instafeed .slick-prev {
+  left: 15% !important;
+  z-index: 100;
+}
+
+#instafeed .slick-next {
+  right: 15% !important;
+  z-index: 100;
+}
+
 /* Dots */
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
@@ -432,6 +493,64 @@
     bottom: -90%;
   }
   #info_slider .slick-next {
+    right: 15% !important;
+    z-index: 100;
+    width: 30%;
+    bottom: -90%;
+  }
+  #instafeed .slick-prev,
+  #instafeed .slick-next {
+    position: absolute;
+    display: block;
+    height: 47px;
+    width: 145px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: auto;
+    bottom: -50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+  }
+  #instafeed .slick-prev:hover, #instafeed .slick-prev:focus,
+  #instafeed .slick-next:hover,
+  #instafeed .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent;
+  }
+  #instafeed .slick-prev:hover:before, #instafeed .slick-prev:focus:before,
+  #instafeed .slick-next:hover:before,
+  #instafeed .slick-next:focus:before {
+    opacity: 1;
+  }
+  #instafeed .slick-prev.slick-disabled:before,
+  #instafeed .slick-next.slick-disabled:before {
+    opacity: 0.25;
+  }
+  #instafeed .slick-prev:before,
+  #instafeed .slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  #instafeed .slick-prev {
+    left: 15% !important;
+    z-index: 100;
+    width: 30%;
+    bottom: -90%;
+  }
+  #instafeed .slick-next {
     right: 15% !important;
     z-index: 100;
     width: 30%;
