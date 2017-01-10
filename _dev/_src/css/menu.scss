@@ -140,6 +140,23 @@
     margin-bottom: 16px;
   }
 
+  .link_menu{
+    overflow: hidden;
+    zoom: 1;
+    padding-left: 0;
+    width: 90%;
+    margin: 0 auto 20px;
+
+    li{
+      width: 48%;
+      float: left;
+
+      &:nth-child(2n){
+        float: right;
+      }
+    }
+  }
+
   .menu_list_container{
     ul{
       li{

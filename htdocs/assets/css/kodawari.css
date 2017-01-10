@@ -2,6 +2,7 @@
   .container {
     width: 100%;
     background: url(../../assets/images/kodawari/bg.png) center center;
+    padding-bottom: 130px;
   }
   .kodawari__wrap {
     padding: 0px 20px;
@@ -11,14 +12,14 @@
     padding: 20px 0;
   }
   .kodawari__header h2 img {
-    width: 80%;
+    width: 100%;
   }
   .kodawari__header h3 {
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 0 10px;
   }
   .kodawari__header h3 img {
-    width: 60%;
+    width: 90%;
   }
   .kodwari_list01 {
     border-top: 2px solid #323232;
@@ -33,6 +34,7 @@
     box-sizing: border-box;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 20px;
   }
   .kodwari_list01 li:nth-of-type(1) {
     margin-left: 0;
@@ -48,13 +50,19 @@
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
-    margin: 15px 0;
+    margin: 15px 0 25px;
   }
   .kodawari_box ul li:nth-child(2n) {
-    border-left: 1px solid #171717;
+    border-left: none;
   }
   .kodawari_box ul li.bdnone {
     border: none;
+  }
+  .border {
+    height: 2px;
+    background-color: #323232;
+    border: none;
+    color: #171717;
   }
 }
 
@@ -137,6 +145,7 @@
     width: 33.3%;
     padding-left: 14px;
     box-sizing: border-box;
+    margin-bottom: 20px;
   }
   .kodwari_list01 li:nth-of-type(1) {
     margin-left: -6px;
@@ -152,8 +161,8 @@
     box-sizing: border-box;
   }
   .border {
-    height: 1px;
-    background-color: #171717;
+    height: 2px;
+    background-color: #323232;
     border: none;
     color: #171717;
   }

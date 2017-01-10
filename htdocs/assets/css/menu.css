@@ -127,6 +127,20 @@
     margin: 0 3%;
     margin-bottom: 16px;
   }
+  .menu_container .link_menu {
+    overflow: hidden;
+    zoom: 1;
+    padding-left: 0;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+  .menu_container .link_menu li {
+    width: 48%;
+    float: left;
+  }
+  .menu_container .link_menu li:nth-child(2n) {
+    float: right;
+  }
   .menu_container .menu_list_container ul li {
     float: left;
     width: 30.1%;
