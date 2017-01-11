@@ -36,14 +36,9 @@
 			nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"><img class="js-rollover" src="/assets/images/top/top_slider_next.png"></button>'
     });
 
-		$('#instafeed a').on('click', function(e){
-      e.preventDefault();
-      // $(this).colorbox({rel:'instagram'});
-    });
-
 		var userFeed = new Instafeed({
 			get: 'user',
-		  template: '<li class="slide"><a href="{{link}}"><img src="{{image}}" alt="{{caption}}"></a></li>',
+		  template: '<li class="slide"><a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"></a></li>',
 			userId: '4320724214',
 			accessToken: '4320724214.35bc06c.c65eb74f94e741d0a5cbcc01b62592a9',
 
@@ -58,7 +53,7 @@
       			prevArrow: '<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Prev" role="button"><img class="js-rollover" src="/assets/images/top/top_slider_prev.png"></button>',
       			nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"><img class="js-rollover" src="/assets/images/top/top_slider_next.png"></button>'
           });
-        }, 1000);
+        }, 100);
       }
 		});
 		userFeed.run();
