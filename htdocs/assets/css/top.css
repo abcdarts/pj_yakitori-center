@@ -14,34 +14,6 @@
   border-top: 17px solid #C9000A;
 }
 
-.top-content.information {
-  background: url(/assets/images/top/top_bg_01.png) center top no-repeat;
-  height: 542px;
-}
-
-.top-content.information .hdg {
-  width: 592px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-.top-content.information .slick-slider {
-  width: 594px;
-  margin: 0 auto;
-}
-
-.top-content.information .slick-slider .slide {
-  width: 171px;
-  padding: 6px;
-  margin: 0 5.5px;
-  background: #fff;
-  box-shadow: 2px 5px 10px 0px #aaaaaa;
-}
-
-.top-content.information .slick-slider .slide img {
-  width: 177px;
-}
-
 .top-content.instagram {
   background: url(/assets/images/top/top_bg_02.png) center top no-repeat;
   height: 542px;
@@ -119,29 +91,6 @@
   .top-content {
     border-top: 17px solid #C9000A;
   }
-  .top-content.information {
-    background: url(/assets/images/top/top_bg_01.png) center top no-repeat;
-    height: 542px;
-  }
-  .top-content.information .hdg {
-    width: 592px;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  .top-content.information .slick-slider {
-    width: 594px;
-    margin: 0 auto;
-  }
-  .top-content.information .slick-slider .slide {
-    width: 171px;
-    padding: 6px;
-    margin: 0 5.5px;
-    background: #fff;
-    box-shadow: 2px 5px 10px 0px #aaaaaa;
-  }
-  .top-content.information .slick-slider .slide img {
-    width: 177px;
-  }
   .top-content.instagram {
     background: url(/assets/images/top/top_bg_02.png) center top no-repeat;
     height: 542px;
@@ -206,30 +155,6 @@
 @media screen and (max-width: 768px) {
   .top-content {
     border-top: 8px solid #C9000A;
-  }
-  .top-content.information {
-    background: url(/assets/images/top/top_bg_01.png) center top no-repeat;
-    height: 100%;
-    padding-bottom: 20%;
-  }
-  .top-content.information .hdg {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  .top-content.information .slick-slider {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .top-content.information .slick-slider .slide {
-    width: 75px;
-    padding: 3px;
-    margin: 0 2px;
-    background: #fff;
-    box-shadow: 1px 2.5px 5px 0px #aaaaaa;
-  }
-  .top-content.information .slick-slider .slide img {
-    width: 100%;
   }
   .top-content.instagram {
     background: url(/assets/images/top/top_bg_02.png) center top no-repeat;

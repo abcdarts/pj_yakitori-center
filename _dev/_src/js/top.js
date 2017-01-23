@@ -27,15 +27,6 @@
 			autoplaySpeed: 3000
     });
 
-		$('#info_slider').slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: true,
-      fade: false,
-			prevArrow: '<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Prev" role="button"><img class="js-rollover" src="/assets/images/top/top_slider_prev.png"></button>',
-			nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button"><img class="js-rollover" src="/assets/images/top/top_slider_next.png"></button>'
-    });
-
 		var userFeed = new Instafeed({
 			get: 'user',
 		  template: '<li class="slide"><a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"></a></li>',

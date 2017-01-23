@@ -16,34 +16,6 @@ $base-color: #C9000A;
 .top-content{
   border-top: 17px solid $base-color;
 
-  &.information{
-    background: url(/assets/images/top/top_bg_01.png) center top no-repeat;
-    height: 542px;
-
-    .hdg{
-      width: 592px;
-      margin: 0 auto;
-      padding: 20px 0;
-    }
-
-    .slick-slider{
-      width: 594px;
-      margin: 0 auto;
-
-      .slide{
-        width: 171px;
-        padding: 6px;
-        margin: 0 5.5px;
-        background: #fff;
-        box-shadow:2px 5px 10px 0px #aaaaaa;
-
-        img{
-          width: 177px;
-        }
-      }
-    }
-  }
-
   &.instagram{
     background: url(/assets/images/top/top_bg_02.png) center top no-repeat;
     // height: 663px;
@@ -127,34 +99,6 @@ $base-color: #C9000A;
   .top-content{
     border-top: 17px solid $base-color;
 
-    &.information{
-      background: url(/assets/images/top/top_bg_01.png) center top no-repeat;
-      height: 542px;
-
-      .hdg{
-        width: 592px;
-        margin: 0 auto;
-        padding: 20px 0;
-      }
-
-      .slick-slider{
-        width: 594px;
-        margin: 0 auto;
-
-        .slide{
-          width: 171px;
-          padding: 6px;
-          margin: 0 5.5px;
-          background: #fff;
-          box-shadow:2px 5px 10px 0px #aaaaaa;
-
-          img{
-            width: 177px;
-          }
-        }
-      }
-    }
-
     &.instagram{
       background: url(/assets/images/top/top_bg_02.png) center top no-repeat;
       // height: 663px;
@@ -234,35 +178,6 @@ $base-color: #C9000A;
 @media screen and ( max-width:768px) {
   .top-content{
     border-top: 8px solid $base-color;
-
-    &.information{
-      background: url(/assets/images/top/top_bg_01.png) center top no-repeat;
-      height: 100%;
-      padding-bottom: 20%;
-
-      .hdg{
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px 0;
-      }
-
-      .slick-slider{
-        width: 90%;
-        margin: 0 auto;
-
-        .slide{
-          width: 75px;
-          padding: 3px;
-          margin: 0 2px;
-          background: #fff;
-          box-shadow:1px 2.5px 5px 0px #aaaaaa;
-
-          img{
-            width: 100%;
-          }
-        }
-      }
-    }
 
     &.instagram{
       background: url(/assets/images/top/top_bg_02.png) center top no-repeat;
